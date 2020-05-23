@@ -3,14 +3,6 @@
   <!--Carousel Wrapper-->
   <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
 
-    <!--Indicators-->
-    <ol class="carousel-indicators">
-      <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-example-1z" data-slide-to="1"></li>
-      <li data-target="#carousel-example-1z" data-slide-to="2"></li>
-    </ol>
-    <!--/.Indicators-->
-
     <!--Slides-->
     <div class="carousel-inner" role="listbox">
 
@@ -24,22 +16,15 @@
             <!-- Content -->
             <div class="text-center white-text mx-5 wow fadeIn">
               <h1 class="mb-4">
-                <strong>Learn Bootstrap 4 with MDB</strong>
+                <strong>Sustainability Starts with Non-Commerciality!™</strong>
               </h1>
 
-              <p>
-                <strong>Best & free guide of responsive web design</strong>
+              <p class="lead">
+                <strong>Paving the Way for Climate Change Action & Zero-Emission Lifestyle by Switching to Green Energy</strong>
               </p>
 
-              <p class="mb-4 d-none d-md-block">
-                <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and
-                  written versions
-                  available. Create your own, stunning website.</strong>
-              </p>
-
-              <a target="_blank" href="https://mdbootstrap.com/education/bootstrap/" class="btn btn-outline-white btn-lg">Start
-                free tutorial
-                <i class="fas fa-graduation-cap ml-2"></i>
+              <a target="_blank" href="enrollment.php" class="btn btn-outline-white btn-lg">Enroll Now
+                <i class="fas fa-edit ml-2"></i>
               </a>
             </div>
             <!-- Content -->
@@ -51,221 +36,44 @@
       </div>
       <!--/First slide-->
 
-      <!--Second slide-->
-      <div class="carousel-item">
-        <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/47.jpg'); background-repeat: no-repeat; background-size: cover;">
-
-          <!-- Mask & flexbox options-->
-          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-
-            <!-- Content -->
-            <div class="text-center white-text mx-5 wow fadeIn">
-              <h1 class="mb-4">
-                <strong>Learn Bootstrap 4 with MDB</strong>
-              </h1>
-
-              <p>
-                <strong>Best & free guide of responsive web design</strong>
-              </p>
-
-              <p class="mb-4 d-none d-md-block">
-                <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and
-                  written versions
-                  available. Create your own, stunning website.</strong>
-              </p>
-
-              <a target="_blank" href="https://mdbootstrap.com/education/bootstrap/" class="btn btn-outline-white btn-lg">Start
-                free tutorial
-                <i class="fas fa-graduation-cap ml-2"></i>
-              </a>
-            </div>
-            <!-- Content -->
-
-          </div>
-          <!-- Mask & flexbox options-->
-
-        </div>
-      </div>
-      <!--/Second slide-->
-
-      <!--Third slide-->
-      <div class="carousel-item">
-        <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/79.jpg'); background-repeat: no-repeat; background-size: cover;">
-
-          <!-- Mask & flexbox options-->
-          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-
-            <!-- Content -->
-            <div class="text-center white-text mx-5 wow fadeIn">
-              <h1 class="mb-4">
-                <strong>Learn Bootstrap 4 with MDB</strong>
-              </h1>
-
-              <p>
-                <strong>Best & free guide of responsive web design</strong>
-              </p>
-
-              <p class="mb-4 d-none d-md-block">
-                <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and
-                  written versions
-                  available. Create your own, stunning website.</strong>
-              </p>
-
-              <a target="_blank" href="https://mdbootstrap.com/education/bootstrap/" class="btn btn-outline-white btn-lg">Start
-                free tutorial
-                <i class="fas fa-graduation-cap ml-2"></i>
-              </a>
-            </div>
-            <!-- Content -->
-
-          </div>
-          <!-- Mask & flexbox options-->
-
-        </div>
-      </div>
-      <!--/Third slide-->
-
     </div>
     <!--/.Slides-->
-
-    <!--Controls-->
-    <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-    <!--/.Controls-->
 
   </div>
   <!--/.Carousel Wrapper-->
 
   <!--Main layout-->
   <main>
-    <div class="container">
+    <div class="">
 
-      <!--Section: Main info-->
-      <section class="mt-5 wow fadeIn">
-
-        <!--Grid row-->
-        <div class="row">
-
-          <!--Grid column-->
-          <div class="col-md-6 mb-4">
-
-            <img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half"
-              alt="">
-
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-md-6 mb-4">
-
-            <!-- Main heading -->
-            <h3 class="h3 mb-3">Material Design for Bootstrap</h3>
-            <p>This template is created with Material Design for Bootstrap (
-              <strong>MDB</strong> ) framework.</p>
-            <p>Read details below to learn more about MDB.</p>
-            <!-- Main heading -->
-
-            <hr>
-
-            <p>
-              <strong>400+</strong> material UI elements,
-              <strong>600+</strong> material icons,
-              <strong>74</strong> CSS animations, SASS files, templates, tutorials and many more.
-              <strong>Free for personal and commercial use.</strong>
-            </p>
-
-            <!-- CTA -->
-            <a target="_blank" href="https://mdbootstrap.com/docs/jquery/getting-started/download/" class="btn btn-grey btn-md">Download
-              <i class="fas fa-download ml-1"></i>
-            </a>
-            <a target="_blank" href="https://mdbootstrap.com/docs/jquery/components/" class="btn btn-grey btn-md">Live
-              demo
-              <i class="far fa-image ml-1"></i>
-            </a>
-
-          </div>
-          <!--Grid column-->
-
-        </div>
-        <!--Grid row-->
-
-      </section>
-      <!--Section: Main info-->
-
-      <hr class="my-5">
-
-      <!--Section: Main features & Quick Start-->
-      <section>
-
-        <h3 class="h3 text-center mb-5">About MDB</h3>
+      <!--Section: Our Mission-->
+      <section style="padding: 8em 0em" class="container">
 
         <!--Grid row-->
         <div class="row wow fadeIn">
 
           <!--Grid column-->
           <div class="col-lg-6 col-md-12 px-4">
-
-            <!--First row-->
-            <div class="row">
-              <div class="col-1 mr-3">
-                <i class="fas fa-code fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h5 class="feature-title">Bootstrap 4</h5>
-                <p class="grey-text">Thanks to MDB you can take advantage of all feature of newest Bootstrap 4.</p>
-              </div>
-            </div>
-            <!--/First row-->
-
-            <div style="height:30px"></div>
-
-            <!--Second row-->
-            <div class="row">
-              <div class="col-1 mr-3">
-                <i class="fas fa-book fa-2x blue-text"></i>
-              </div>
-              <div class="col-10">
-                <h5 class="feature-title">Detailed documentation</h5>
-                <p class="grey-text">We give you detailed user-friendly documentation at your disposal. It will help
-                  you to implement your ideas
-                  easily.
-                </p>
-              </div>
-            </div>
-            <!--/Second row-->
-
-            <div style="height:30px"></div>
-
-            <!--Third row-->
-            <div class="row">
-              <div class="col-1 mr-3">
-                <i class="fas fa-graduation-cap fa-2x cyan-text"></i>
-              </div>
-              <div class="col-10">
-                <h5 class="feature-title">Lots of tutorials</h5>
-                <p class="grey-text">We care about the development of our users. We have prepared numerous tutorials,
-                  which allow you to learn
-                  how to use MDB as well as other technologies.</p>
-              </div>
-            </div>
-            <!--/Third row-->
-
+            <img src="img/our-mission.jpg" style="width: 100%;">
           </div>
           <!--/Grid column-->
 
           <!--Grid column-->
           <div class="col-lg-6 col-md-12">
-
-            <p class="h5 text-center mb-4">Watch our "5 min Quick Start" tutorial</p>
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cXTThxoywNQ" allowfullscreen></iframe>
-            </div>
+            <h1 class="h1-responsive text-justify my-4 font-weight-bold elegant-text" style="color: #555">OUR MISSION</h1>
+            <hr class="my-4 mx-0 text-justify" style="width: 100px;border-color: #555;border-width: 2px;border-radius:20px;border-style: groove;">
+            <p class="text-justify" style="color: #555;font-weight: 400;line-height: 1.6em;">
+              If there is a commercial tag to an element, there is no sustainability for it! For example, gold – we will never end the search for it! Plastics – we will not be able to end its use, as the material is irreplaceable in many aspects. Iron – imagine a world without it! Petrol – we cannot stop its use until there is a reliable alternative. All these elements have a high commercial value. All resources being tapped, the mining never stopped due to the need. Sustaining these elements is not happening because of the huge commercial interests in it. Therefore, if sustainability is the motto then commercialism should go away.
+            </p>
+            <p class="text-justify" style="color: #555;font-weight: 400;line-height: 1.6em;">
+              To act on the critical situation of pollution and climate change, we have missioned out to set up zero-emission energy generation. Two things are critical to life: the Air we breathe and Food we eat. If they are wrong, nothing on Earth could be right.
+            </p>
+            <p class="text-justify" style="color: #555;font-weight: 400;line-height: 1.6em;">
+              Tapping the solar and wind energy at this time is crucial, hence we realized that this energy during these critical times should be made accessible without commercial interests to people so that everyone can contribute to the climate change action of reducing emission.
+            </p>
+            <p class="text-justify" style="color: #555;font-weight: 400;line-height: 1.6em;">
+              Your investment is ₹0, an hour’s time to understand and providing the unused space on your roof or terrace for us to install solar panel & windmill.
+            </p>
           </div>
           <!--/Grid column-->
 
@@ -273,14 +81,13 @@
         <!--/Grid row-->
 
       </section>
-      <!--Section: Main features & Quick Start-->
+      <!--Section: Our Mission-->
 
-      <hr class="my-5">
+      <!--Section: Our Scheme-->
+      <section style="padding: 8em 0em;background-color: #00869b" class="container-fluid mx-0">
 
-      <!--Section: Not enough-->
-      <section>
-
-        <h2 class="my-5 h3 text-center">Not enough?</h2>
+        <h1 class="h1-responsive text-center my-4 font-weight-bold elegant-text" style="color: #555">OUR SCHEME</h1>
+        <hr class="my-4" style="width: 100px;border-color: #555;border-width: 2px;border-radius:20px;border-style: groove;">
 
         <!--First row-->
         <div class="row features-small mb-5 mt-3 wow fadeIn">
@@ -418,7 +225,7 @@
         <!--/First row-->
 
       </section>
-      <!--Section: Not enough-->
+      <!--Section: Our Scheme-->
 
       <hr class="mb-5">
 
