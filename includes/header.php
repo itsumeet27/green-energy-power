@@ -49,13 +49,16 @@
 
         <!-- Left -->
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://mdbootstrap.com/docs/jquery/" target="_blank">About MDB</a>
+            <a class="nav-link" href="index.php">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="about" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+            <div class="dropdown-menu dropdown-primary" aria-labelledby="about">
+              <a class="dropdown-item" href="about-us.php">About Us</a>
+              <a class="dropdown-item" href="how-it-works.php">How it Works?</a>
+              <a class="dropdown-item" href="why-us.php">Why Us?</a>
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://mdbootstrap.com/docs/jquery/getting-started/download/" target="_blank">Free
