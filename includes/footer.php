@@ -54,10 +54,10 @@
             <h5 class="text-uppercase">Services</h5>
      
             <ul class="list-unstyled">
-              <li class="py-2"><a class="white-text" href="services.php#home">Homes</a></li>
-              <li class="py-2"><a class="white-text" href="services.php#industry">Industry, Sheds or Cold Storage</a></li>
-              <li class="py-2"><a class="white-text" href="services.php#buildings">High-Rise Buildings</a></li>
-              <li class="py-2"><a class="white-text" href="services.php#farmlands">Farmlands & Coastal Areas</a></li>
+              <li class="py-2"><a class="white-text" href="services.php#roof-top-solar">Homes</a></li>
+              <li class="py-2"><a class="white-text" href="services.php#roof-top-solar">Industry, Sheds or Cold Storage</a></li>
+              <li class="py-2"><a class="white-text" href="services.php#vertical-windmill">High-Rise Buildings</a></li>
+              <li class="py-2"><a class="white-text" href="services.php#vertical-windmill">Farmlands & Coastal Areas</a></li>
             </ul>
 
           </div>
