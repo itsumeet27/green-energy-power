@@ -10,8 +10,12 @@
       </div>
     </div>
   </div>
-  <section class="container py-5">
-
+  <section class="container-fluid py-5">
+  	<div class="row">
+  		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+  			<iframe src="docs/Terms and Conditions.pdf" width="100%" height="768"></iframe>
+  		</div>
+  	</div>
   </section>
 
 <?php include('includes/footer.php'); ?>
