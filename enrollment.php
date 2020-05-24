@@ -5,7 +5,30 @@
   		width: 300px;
   	}
   </style>
-
+  	<script>
+	    function random_function(){
+	        var a=document.getElementById("service").value;
+	        if(a==="Home Rooftop Solar"){
+	            var arr=["0% Discount","25% Discount","50% Discount"];
+	        }else if(a==="Industrial or Commercial Sector Shed, or Building Rooftop Solar"){
+	            var arr=["0% Discount","25% Discount","50% Discount"];
+	        }else if(a==="Farmhouse or Farmland Windmill"){
+	            var arr=["25% Discount","50% Discount (Currently Unavailable)"];
+	        }else if(a==="High-rise Building Windmill"){
+	            var arr=["25% Discount","50% Discount (Currently Unavailable)"];
+	        }else if(a==="Coastal Windmill"){
+	            var arr=["25% Discount","50% Discount (Currently Unavailable)"];
+	        }
+	     
+	        var string="";
+	     
+	        for(i=0;i<arr.length;i++)
+	        {
+	            string=string+"<option value="+arr[i]+">"+arr[i]+"</option>";
+	        }
+	        document.getElementById("plan").innerHTML=string;
+	    }
+	</script>
   <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/93.jpg'); background-repeat: no-repeat; background-size: cover;">
     <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
       <div class="text-center white-text mx-5 wow fadeIn">
@@ -36,7 +59,8 @@
 
 			    <!-- Select Service -->
 			    <label style="color:#555;font-weight:400" for="service">Select Service</label><br>
-			    <select class="browser-default custom-select mb-4" name="service" id="service" style="width: 300px">
+			    <select class="browser-default custom-select mb-4" name="service" id="service" style="width: 300px" onchange="random_function()">
+			    	<option value="Nothing Selected">Select Service</option>
 			        <option value="Home Rooftop Solar">Home Rooftop Solar</option>
 			        <option value="Industrial or Commercial Sector Shed, or Building Rooftop Solar">
 			        	Industrial or Commercial Sector Shed, or Building Rooftop Solar
@@ -48,10 +72,8 @@
 
 			    <!-- Select Plan -->
 			    <label style="color:#555;font-weight:400" for="plan">Select Plan</label><br>
-			    <select class="browser-default custom-select mb-4" name="plan" id="plan" style="width: 300px">
-			        <option value="0%">0%</option>
-			        <option value="25%">25%</option>
-			        <option value="50%">50%</option>
+			    <select class="browser-default custom-select mb-4" name="plan" id="plan" style="width: 300px" onchange="random_function1()">
+			    	<option value="Select Plan">Select Plan</option>
 			    </select><br>
 
 			    <!-- Avg. Units Used Per Billing Cycle -->
