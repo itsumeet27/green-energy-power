@@ -61,8 +61,8 @@
     <div class="container">
 
       <!-- Brand -->
-      <a class="navbar-brand" href="https://mdbootstrap.com/docs/jquery/" target="_blank">
-        <strong>MDB</strong>
+      <a class="navbar-brand" href="index.php" target="_blank">
+        <strong>GREEN ENERGY POWER</strong>
       </a>
 
       <!-- Collapse -->
