@@ -10,7 +10,7 @@
       <div class="text-center white-text mx-5 wow fadeIn">
         <h1 class="mb-4">
           <strong>PRIVACY POLICY</strong>
-          <hr class="my-4" style="width: 100px;border-color: #fff;border-width: 2px;border-radius:20px;border-style: groove;">
+          <hr class="my-4" style="width: 100px;border-color: #fff;border-width: 2px;border-radius:20px;border-style: solid;">
         </h1>
       </div>
       <!-- Content -->

@@ -61,7 +61,7 @@
             <!--Grid column-->
             <div class="col-lg-6 col-md-12">
               <h1 class="h1-responsive text-justify my-4 font-weight-bold elegant-text" style="color: #555">OUR MISSION</h1>
-              <hr class="my-4 mx-0 text-justify" style="width: 100px;border-color: #555;border-width: 2px;border-radius:20px;border-style: groove;">
+              <hr class="my-4 mx-0 text-justify" style="width: 100px;border-color: #555;border-width: 2px;border-radius:20px;border-style: solid;">
               <p class="text-justify" style="color: #555;font-weight: 400;line-height: 1.6em;">
                 If there is a commercial tag to an element, there is no sustainability for it! For example, gold – we will never end the search for it! Plastics – we will not be able to end its use, as the material is irreplaceable in many aspects. Iron – imagine a world without it! Petrol – we cannot stop its use until there is a reliable alternative. All these elements have a high commercial value. All resources being tapped, the mining never stopped due to the need. Sustaining these elements is not happening because of the huge commercial interests in it. Therefore, if sustainability is the motto then commercialism should go away.
               </p>
@@ -87,7 +87,7 @@
         <section style="padding: 6em 0em;background-color: #00869b45" class="container-fluid mx-0">
 
           <h1 class="h1-responsive text-center my-4 font-weight-bold" style="color: #555">OUR SCHEME</h1>
-          <hr class="my-4" style="width: 100px;border-color: #555;border-width: 2px;border-radius:20px;border-style: groove;">
+          <hr class="my-4" style="width: 100px;border-color: #555;border-width: 2px;border-radius:20px;border-style: solid;">
           <p class="text-center pt-2 lead" style="font-weight: 400;color: #555;line-height: 1.7em;">
             If you are ready to act for stopping climate change and air pollution, we have 3 impressive options to choose from:
           </p>
@@ -154,7 +154,7 @@
       <!--Section: Driving Sustainavility-->
         <section class="container"style="padding: 6em 0em;">
           <h1 class="h1-responsive text-center my-4 font-weight-bold" style="color: #555">DRIVING SUSTAINABILITY</h1>
-          <hr class="my-4" style="width: 150px;border-color: #555;border-width: 2px;border-radius:20px;border-style: groove;">
+          <hr class="my-4" style="width: 150px;border-color: #555;border-width: 2px;border-radius:20px;border-style: solid;">
           <p class="text-justify pt-2" style="font-weight: 400;color: #555;line-height: 1.7em;font-size: 17px;">
             Our mission towards non-commerciality is mainly to energize the rural farms with zero-emission power and lead to organic farming. As we are a not-for-profit organization, all the subsidy and profits we receive will go to projects in rural areas in the making of Energy Independent Rural Farmlands.
           </p>
