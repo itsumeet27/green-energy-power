@@ -19,7 +19,7 @@
     body,
     header,
     .carousel {
-      height: 60vh;
+      height: 75vh;
     }
 
     @media (max-width: 740px) {
