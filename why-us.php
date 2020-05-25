@@ -21,7 +21,7 @@
 	  </div>
   <!-- Full Page Intro -->
 
-  <section class="container py-5">
+  <section class="container px-4 py-5">
   	<p class="text-justify" style="font-weight: 400;color: #555;line-height: 1.7em;font-size: 17px;">
   		We operate under Powerganic Foundation which is a registered Section 8 company (Not for Profit company) behind a mission that will enable a sustainable rural world with our projects of Zero Emission lifestyle with renewable or green energy power, organic farming, rural digital education on governance, skill development center for organic farming and upliftment of underprivileged farmers.
   	</p>

@@ -18,7 +18,7 @@
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
           <img src="img/roof-top-solar.jpg" style="width: 100%;height: 100%">
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3">
           <!-- Homes -->
           <h4 class="h4-responsive text-justify font-weight-bold" style="color: #555">Homes</h4>
           <ul class="text-justify">
@@ -54,7 +54,7 @@
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
           <img src="img/vertical-windmill.jpg" style="width: 100%;">
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3">
           <!-- High raised buildings -->
           <h4 class="h4-responsive text-justify font-weight-bold" style="color: #555">High raised buildings</h4>
           <ul class="text-justify">

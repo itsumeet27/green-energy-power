@@ -59,7 +59,7 @@
             <!--/Grid column-->
 
             <!--Grid column-->
-            <div class="col-lg-6 col-md-12">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" style="padding: 0em 2em">
               <h1 class="h1-responsive text-justify my-4 font-weight-bold elegant-text" style="color: #555">OUR MISSION</h1>
               <hr class="my-4 mx-0 text-justify" style="width: 100px;border-color: #555;border-width: 2px;border-radius:20px;border-style: solid;">
               <p class="text-justify" style="color: #555;font-weight: 400;line-height: 1.6em;">
@@ -88,10 +88,10 @@
 
           <h1 class="h1-responsive text-center my-4 font-weight-bold" style="color: #555">OUR SCHEME</h1>
           <hr class="my-4" style="width: 100px;border-color: #555;border-width: 2px;border-radius:20px;border-style: solid;">
-          <p class="text-center pt-2 lead" style="font-weight: 400;color: #555;line-height: 1.7em;">
+          <p class="text-center pt-2 lead px-3" style="font-weight: 400;color: #555;line-height: 1.7em;">
             If you are ready to act for stopping climate change and air pollution, we have 3 impressive options to choose from:
           </p>
-          <div class="row mx-5 my-5">
+          <div class="row mx-2 my-5">
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-4 d-flex align-items-stretch">
               <div class="card" style="background: #fff;">
                 <div class="card-body">
@@ -116,7 +116,7 @@
                     <img src="img/25.png" style="width: 150px">
                   </div>
                   <div class="description">
-                    <p class="text-center pt-3 px-2" style="font-weight: 400;color: #555;line-height: 1.7em;font-size: 18px">
+                    <p class="text-center pt-3 px-3" style="font-weight: 400;color: #555;line-height: 1.7em;font-size: 18px">
                       25% discount on your electricity bills for 15 years, then free electricity until lifetime of the panel
                     </p>
                   </div>
@@ -144,7 +144,7 @@
               </div>
             </div>
           </div>        
-          <p class="text-center mx-5 py-2 lead" style="font-weight: 400;color: #555;line-height: 1.7em;">
+          <p class="text-center px-3 py-2 lead" style="font-weight: 400;color: #555;line-height: 1.7em;">
             The solar panel generally comes with a 25 years lifetime guarantee. We will also help you make shades4 on your terrace or parking lot for you to feel less warm on summer days and park your vehicles under shade.
           </p>
 
@@ -152,7 +152,7 @@
       <!--Section: Our Scheme-->
 
       <!--Section: Driving Sustainavility-->
-        <section class="container"style="padding: 6em 0em;">
+        <section class="container"style="padding: 6em 1.25em;">
           <h1 class="h1-responsive text-center my-4 font-weight-bold" style="color: #555">DRIVING SUSTAINABILITY</h1>
           <hr class="my-4" style="width: 150px;border-color: #555;border-width: 2px;border-radius:20px;border-style: solid;">
           <p class="text-justify pt-2" style="font-weight: 400;color: #555;line-height: 1.7em;font-size: 17px;">

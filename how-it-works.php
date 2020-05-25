@@ -20,7 +20,7 @@
 
   </div>
   <!-- Full Page Intro -->
-  <section class="container py-5">
+  <section class="container px-4 py-5">
   	<p class="text-justify" style="font-weight: 400;color: #555;line-height: 1.7em;font-size: 17px;">
   		Our project is based on the RESCO model. Your investment is <b>Zero Rupees</b>. 
     </p>

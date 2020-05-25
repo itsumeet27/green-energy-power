@@ -20,7 +20,7 @@
 
   </div>
   <!-- Full Page Intro -->
-  <section class="container py-5">
+  <section class="container px-4 py-5">
   	<p class="text-justify" style="font-weight: 400;color: #555;line-height: 1.7em;font-size: 17px;">
   		We are a group of young Engineers, Agriculturists and Business entrepreneurs who have lived and travelled across the planet working in various fields with wide knowledge. In our due course of life, we realized the need for a life balanced with sustainability which starts from removing the commercial interests behind basic and essential commodities, and critical subjects. Therefore, we joined hands to combat climate change along with the high industrial chemical-based fertilizer food production.
   	</p>
