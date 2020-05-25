@@ -1,8 +1,5 @@
-  </main>
-    <!--Main layout-->
-
-    <!--Footer-->
-    <footer class="text-center font-small wow fadeIn" style="background-color: #004a6e">
+<!--Footer-->
+    <footer class="text-center font-small mt-4 wow fadeIn" style="background-color: #004a6e">
 
       <!-- Footer Links -->
       <div class="container-fluid text-center text-md-left py-4 white-text">
@@ -80,13 +77,13 @@
 
     <!-- SCRIPTS -->
     <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
     <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="../js/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
     <!-- Initializations -->
     <script type="text/javascript">
       // Animations initialization

@@ -163,13 +163,12 @@
               echo "<script>window.open('enrollment.php','_self')</script>";;
             }else{
             	if(isset($check)){
-					$insert = "INSERT INTO enrollment (firstname,lastname,service,plan,avg_units_used,electricity_number,conn_area_code,district,area_place,email,password) VALUES ('$firstname','$lastname','$service','$plan','$avg_units_used','$electricity_number','$conn_area_code','$district','$area_place','$email','$password')";
+					$insert = "INSERT INTO users (firstname,lastname,service,plan,avg_units_used,electricity_number,conn_area_code,district,area_place,email,password) VALUES ('$firstname','$lastname','$service','$plan','$avg_units_used','$electricity_number','$conn_area_code','$district','$area_place','$email','$password')";
 					$result = $db->query($insert);
-					var_dump($result);
 					if($result){
 						$_SESSION['email'] = $email;
 						echo "<script>alert('Your account has been created successfully')</script>";
-						echo "<script>window.open('profile.php','_self')</script>";
+						echo "<script>window.open('profile/index.php','_self')</script>";
 					}else{
 						echo "<script>alert('Your account was not created, please try again!')</script>";
 						echo "<script>window.open('enrollment.php','_self')</script>";
