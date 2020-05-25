@@ -84,6 +84,13 @@
           </li>
         </ul>
 
+        <!-- Right -->
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a href="logout.php" class="btn btn-md btn-white" target="_blank">Logout</a>
+          </li>
+        </ul>
+
       </div>
 
     </div>

@@ -1,11 +1,36 @@
-<?php include('includes/init.php'); ?>
+<?php 
+  session_start();
+  include('includes/init.php'); 
+  $path=$_SERVER['PHP_SELF'];
+  $page=basename($path);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Material Design Bootstrap</title>
+  <title>
+    <?php
+      if($path === '/green-energy-power/index.php'){
+        echo "Green Energy Power";  
+      }elseif($path === '/green-energy-power/about-us.php'){
+        echo "About Us | Green Energy Power";  
+      }elseif($path === '/green-energy-power/enrollment.php'){
+        echo "Enrollment Form | Green Energy Power";  
+      }elseif($path === '/green-energy-power/why-us.php'){
+        echo "Why Us? | Green Energy Power";  
+      }elseif($path === '/green-energy-power/how-it-works.php'){
+        echo "How it Works? | Green Energy Power";  
+      }elseif($path === '/green-energy-power/privacy-policy.php'){
+        echo "Privacy Policy | Green Energy Power";  
+      }elseif($path === '/green-energy-power/services.php'){
+        echo "Services | Green Energy Power";  
+      }elseif($path === '/green-energy-power/terms-and-conditions.php'){
+        echo "Terms and Conditions | Green Energy Power";  
+      }
+    ?>
+  </title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
   <!-- Bootstrap core CSS -->
@@ -97,9 +122,24 @@
 
         <!-- Right -->
         <ul class="navbar-nav nav-flex-icons">
-          <li class="nav-item">
-            <a href="enrollment.php" class="btn btn-lg btn-default" target="_blank">ENROLL NOW</a>
-          </li>
+          <?php 
+              if(!isset($_SESSION['email'])){
+                echo '<li class="nav-item">
+                        <a href="login.php" class="btn btn-md btn-white" target="_blank">LOGIN</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="enrollment.php" class="btn btn-md btn-default" target="_blank">ENROLL NOW</a>
+                      </li>';
+              }
+              else{
+                echo '<li class="nav-item">
+                        <a href="profile/index.php" class="btn btn-md btn-white" target="_blank">My Profile</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="profile/logout.php" class="btn btn-md btn-default" target="_blank">Logout</a>
+                      </li>';
+              }
+            ?>
         </ul>
 
       </div>

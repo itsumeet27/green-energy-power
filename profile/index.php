@@ -15,6 +15,13 @@
 		    $firstname = $row_pro['firstname'];
 		    $lastname = $row_pro['lastname'];
 		    $email = $row_pro['email'];
+		    $service = $row_pro['service'];
+		    $plan = $row_pro['plan'];
+		    $avg_units_used = $row_pro['avg_units_used'];
+		    $electricity_number = $row_pro['electricity_number'];
+		    $conn_area_code = $row_pro['conn_area_code'];
+		    $district = $row_pro['district'];
+		    $area_place = $row_pro['area_place'];
 		}
 ?>
 
@@ -28,5 +35,37 @@
 			</div>
 		</div>
 	</div>
+	<div class="container-fluid profile-details my-4">
+		<h3 class="text-center pb-4">Profile Details</h3>
+		<div class="table-responsive">
+			<table class="table table-bordered table-striped table-sm">
+				<thead style="background: #004a6e;color: #fff">
+					<th>Full Name</th>
+					<th>Email</th>
+					<th>Service</th>
+					<th>Plan</th>
+					<th>Avg. Units Used Per Billing Cycle</th>
+					<th>Electricity Connection Number</th>
+					<th>Connection Area Code</th>
+					<th>District</th>
+					<th>Area/Place</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td style="font-weight: 400"><?=$firstname; ?> <?=$lastname; ?></td>
+						<td style="font-weight: 400"><?=$email; ?></td>
+						<td style="font-weight: 400"><?=$service; ?></td>
+						<td style="font-weight: 400"><?=$plan; ?></td>
+						<td style="font-weight: 400"><?=$avg_units_used; ?></td>
+						<td style="font-weight: 400"><?=$electricity_number; ?></td>
+						<td style="font-weight: 400"><?=$conn_area_code; ?></td>
+						<td style="font-weight: 400"><?=$district; ?></td>
+						<td style="font-weight: 400"><?=$area_place; ?></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	
 
 <?php include('includes/footer.php'); } ?>
