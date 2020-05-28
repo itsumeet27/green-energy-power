@@ -74,19 +74,32 @@
 					</form>
 					<?php 
 						if(isset($_POST['login'])){
-							if(empty($_POST['email']) || empty($_POST['password'])){
-								echo "<script>window.open('login.php','_self')</script>";
-							}else{
-								$query = "SELECT * FROM users WHERE email = '".$_POST['email']."' AND password = '".md5($_POST['password'])."'";
-								$result = mysqli_query($db, $query);
-								if($row = mysqli_fetch_assoc($result)){
-									$_SESSION['email'] = $_POST['email'];
-									$_SESSION['firstname'] = $row['firstname'];
-									$_SESSION['id'] = $row['id'];
-									echo "<script>window.open('profile/index.php','_self')</script>";
+							$email = $_POST['email'];
+							$password = md5($_POST['password']);
+							$query = "SELECT * FROM users WHERE email = '$email' AND password = '$password'";
+							$result = $db->query($query);
+							$num = mysqli_fetch_array($result);
+							$status = $num['status'];
+							if($num > 0){	
+								if($status == 0){
+									echo "<script>alert('Verify your Email Id by clicking  the link In your mailbox')</script>";
 								}else{
-									echo "<script>alert('Invalid email or password, please try again!');</script>";
+									$_SESSION['email']=$email;
+									$_SESSION['id']=$num['id'];
+									$_SESSION['firstname']=$num['firstname'];
+									$extra="profile/index.php";
+									$host=$_SERVER['HTTP_HOST'];
+									$uri=rtrim(dirname($_SERVER['PHP_SELF']),'/\\');
+									echo "<script>window.open('profile/index.php','_self')</script>";
+									exit();
 								}
+							}else{
+								echo "<script>alert('Invalid login credentials, please try again!')</script>";
+								$extra="login.php";
+								$host  = $_SERVER['HTTP_HOST'];
+								$uri  = rtrim(dirname($_SERVER['PHP_SELF']),'/\\');
+								echo "<script>window.open('login.php','_self')</script>";
+								exit();
 							}
 						}
 

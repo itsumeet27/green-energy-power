@@ -1,10 +1,14 @@
-<?php include('includes/header.php'); ?>
+<?php 
+	include('includes/header.php'); 
+?>
+
 
 	<style type="text/css">
 		input[type="text"], input[type="number"], input[type="email"], input[type="password"]{
 			width: 300px;
 		}
 	</style>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
   	<script type="text/javascript">
 	    function random_function(){
 	        var a=document.getElementById("service").value;
@@ -158,15 +162,43 @@
   			$email = sanitize($_POST['email']);
   			$password = sanitize(md5($_POST['password']));
 			$confirm_password = sanitize(md5($_POST['confirm_password']));
+			$status = 0;
+			$activationcode=md5($email.time());
 
 			if($confirm_password != $password){
               echo "<script>alert('Your password does not match')</script>";
               echo "<script>window.open('enrollment.php','_self')</script>";;
             }else{
             	if(isset($check)){
-					$insert = "INSERT INTO users (firstname,lastname,service,plan,avg_units_used,electricity_number,conn_area_code,district,area_place,email,password) VALUES ('$firstname','$lastname','$service','$plan','$avg_units_used','$electricity_number','$conn_area_code','$district','$area_place','$email','$password')";
+
+					$insert = "INSERT INTO users (firstname,lastname,service,plan,avg_units_used,electricity_number,conn_area_code,district,area_place,email,password,activationcode,status) VALUES ('$firstname','$lastname','$service','$plan','$avg_units_used','$electricity_number','$conn_area_code','$district','$area_place','$email','$password','$activationcode','$status')";
 					$result = $db->query($insert);
 					if($result){
+						$to=$email;
+						$msg= "Thanks for new Registration.";   
+						$subject=" Email Verification";
+						$headers .= "MIME-Version: 1.0"."\r\n";
+				        $headers .= 'Content-type: text/html; charset=iso-8859-1'."\r\n";
+				        $headers .= 'From:Green Energy Power <sksksharma0@gmail.com>'."\r\n";
+
+				        $ms.="
+				        	<html>
+				        		<body>
+				        			<div class='container-fluid'>
+				        				<h3 class='h3-responsive text-justify'>Dear $firstname $lastname,</h3></br></br>";
+						$ms.="
+										<p style='padding-top:8px;color: green;font-size: 18px'>Your account information is successfully updated in our server. Please click the following link for verifying and activation your account.
+										</p>
+										<div style='padding-top:10px;'><a style='padding: 8px 15px;background-color:green;color:#fff;' href='http://netmatesolutions.com/green-energy-power/email_verification.php?code=$activationcode'>Click Here</a>
+										</div>
+										<p style='padding-top:4px;font-size:18px'> Powered by <a href='http://netmatesolutions.com/green-energy-power/'>Green Energy Power</a>
+										</p>
+									</div>
+								</body>
+							</html>";
+						mail($to,$subject,$ms,$headers);
+				    	echo "<script>alert('Registration successful, please verify in the registered Email-Id');</script>";
+						echo "<script>window.location = 'login.php';</script>";
 						$_SESSION['email'] = $email;
 						echo "<script>alert('Your account has been created successfully')</script>";
 						echo "<script>window.open('profile/index.php','_self')</script>";
