@@ -1,43 +1,49 @@
 <?php include('includes/header.php'); ?>
-
   <!--Carousel Wrapper-->
   <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
 
     <!--Slides-->
     <div class="carousel-inner" role="listbox">
 
       <!--First slide-->
       <div class="carousel-item active">
-        <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg'); background-repeat: no-repeat; background-size: cover;">
-
-          <!-- Mask & flexbox options-->
-          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-
-            <!-- Content -->
-            <div class="text-center white-text mx-5 wow fadeIn">
-              <h1 class="mb-4">
-                <strong>Sustainability Starts with Non-Commerciality!<sup>TM</sup></strong>
-              </h1>
-
-              <p class="lead">
-                <strong>Paving the Way for Climate Change Action & Zero-Emission Lifestyle by Switching to Green Energy</strong>
-              </p>
-
-              <a target="_blank" href="enrollment.php" class="btn btn-outline-white btn-lg">Enroll Now
-                <i class="fas fa-edit ml-2"></i>
-              </a>
-            </div>
-            <!-- Content -->
-
-          </div>
-          <!-- Mask & flexbox options-->
-
-        </div>
+        <img src="img/Home Page - 01.jpg" class="img-reponsive img-fluid">
       </div>
       <!--/First slide-->
 
+      <!--Second slide-->
+      <div class="carousel-item">
+        <img src="img/Home Page - 02.jpg" class="img-reponsive img-fluid">
+      </div>
+      <!--/Second slide-->
+
+      <!--Third slide-->
+      <div class="carousel-item">
+        <img src="img/Home Page - 03.jpg" class="img-reponsive img-fluid">
+      </div>
+      <!--/Third slide-->
+
     </div>
     <!--/.Slides-->
+
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
 
   </div>
   <!--/.Carousel Wrapper-->
@@ -45,6 +51,19 @@
   <!--Main layout-->
   <main>
     <div class="">
+      <div class=" text-center my-5">
+        <h1 class="mb-4">
+          <strong>Sustainability Starts with Non-Commerciality!<sup>TM</sup></strong>
+        </h1>
+
+        <p class="lead">
+          <strong>Paving the Way for Climate Change Action & Zero-Emission Lifestyle by Switching to Green Energy</strong>
+        </p>
+
+        <a target="_blank" href="enrollment.php" class="btn btn-outline-black btn-lg">Enroll Now
+          <i class="fas fa-edit ml-2"></i>
+        </a>
+      </div>
 
       <!--Section: Our Mission-->
         <section style="padding: 8em 0em" class="container">
