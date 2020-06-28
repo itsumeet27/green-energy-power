@@ -44,7 +44,7 @@
     body,
     header,
     .carousel {
-      height: 100vh;
+      height: auto;
     }
 
     @media (max-width: 740px) {
@@ -53,7 +53,7 @@
       body,
       header,
       .carousel {
-        height: 100vh;
+        height: auto;
       }
     }
 
@@ -63,7 +63,7 @@
       body,
       header,
       .carousel {
-        height: 100vh;
+        height: auto;
       }
     }
 
@@ -82,7 +82,7 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar z-depth-0">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar z-depth-0" style="background-color: #555;">
     <div class="container">
 
       <!-- Brand -->
@@ -147,3 +147,4 @@
     </div>
   </nav>
   <!-- Navbar -->
+  <main>
