@@ -1,25 +1,8 @@
 <?php include('includes/header.php'); ?>
 
-  <!-- Full Page Intro -->
-  <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/93.jpg'); background-repeat: no-repeat; background-size: cover;">
-
-    <!-- Mask & flexbox options-->
-    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-
-      <!-- Content -->
-      <div class="text-center white-text mx-5 wow fadeIn">
-        <h1 class="mb-4">
-          <strong>HOW IT WORKS?</strong>
-          <hr class="my-4" style="width: 100px;border-color: #fff;border-width: 2px;border-radius:20px;border-style: solid;">
-        </h1>
-      </div>
-      <!-- Content -->
-
-    </div>
-    <!-- Mask & flexbox options-->
-
+  <div style="margin-top: 7.5em">
+    <img src="img/How It Works.jpg" class="img-responsive img-fluid">
   </div>
-  <!-- Full Page Intro -->
   <section class="container px-4 py-5">
   	<p class="text-justify" style="font-weight: 400;color: #555;line-height: 1.7em;font-size: 17px;">
   		Our project is based on the RESCO model. Your investment is <b>Zero Rupees</b>. 
@@ -45,7 +28,8 @@
     <p class="text-justify" style="font-weight: 400;color: #555;line-height: 1.7em;font-size: 17px;">
       Currently the windmill is only available for 0% discount plan or scheme, but we are striving hard to bring the windmill soon by Third Quarter of 2020 for all plans or schemes that will enable electricity generation in nighttime. When available, we will install the windmill, if preferable, which will undergo discount period adjustments.
     </p>
-    <h3 class="h3-responsive font-weight-bold" style="color: #555">HOW TO ENROLL?</h3>
+    <img src="img/Infographic.jpg" style="width: 100%" class="img-fluid">
+    <!-- <h3 class="h3-responsive font-weight-bold" style="color: #555">HOW TO ENROLL?</h3>
     <p class="text-justify mt-3" style="font-weight: 400;color: #555;line-height: 1.7em;font-size: 17px;">
       <b>Step 1</b> – Enroll by providing electricity DISCOM details (allowing us to handle payments and bill generation accordingly to discount plans) and create account
     </p>
@@ -63,7 +47,7 @@
     </p>
     <p class="text-justify" style="font-weight: 400;color: #555;line-height: 1.7em;font-size: 17px;">
       <b>Step 6</b> – First Bill with discount applied will be delivered and cleared
-    </p>
+    </p> -->
   </section>
 
 <?php include('includes/footer.php'); ?>

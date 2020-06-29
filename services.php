@@ -1,6 +1,6 @@
 <?php include('includes/header.php'); ?>
 
-  <div style="margin-top: 3.5em">
+  <div style="margin-top: 7.5em">
     <img src="img/Services.jpg" class="img-responsive img-fluid">
   </div>
   

@@ -1,25 +1,8 @@
 <?php include('includes/header.php'); ?>
 
-  <!-- Full Page Intro -->
-	  <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/93.jpg'); background-repeat: no-repeat; background-size: cover;">
-
-	    <!-- Mask & flexbox options-->
-	    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-
-	      <!-- Content -->
-	      <div class="text-center white-text mx-5 wow fadeIn">
-	        <h1 class="mb-4">
-	          <strong>WHY US?</strong>
-	          <hr class="my-4" style="width: 75px;border-color: #fff;border-width: 2px;border-radius:20px;border-style: solid;">
-	        </h1>
-	      </div>
-	      <!-- Content -->
-
-	    </div>
-	    <!-- Mask & flexbox options-->
-
-	  </div>
-  <!-- Full Page Intro -->
+  <div style="margin-top: 7.5em">
+    <img src="img/Why Us.jpg" class="img-responsive img-fluid">
+  </div>
 
   <section class="container px-4 py-5">
   	<p class="text-justify" style="font-weight: 400;color: #555;line-height: 1.7em;font-size: 17px;">

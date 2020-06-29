@@ -1,6 +1,6 @@
 <?php include('includes/header.php'); ?>
   <!--Carousel Wrapper-->
-  <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel" style="margin-top: 3.5em">
+  <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel" style="margin-top: 7.5em">
 
     <!--Indicators-->
     <ol class="carousel-indicators">

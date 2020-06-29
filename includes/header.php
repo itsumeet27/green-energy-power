@@ -76,31 +76,35 @@
       }
     }
 
+    #nav li a{
+      color: #555;
+      font-weight: 500
+    }
+
   </style>
 </head>
 
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar z-depth-0" style="background-color: #555;">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar z-depth-0" style="background-color: #fff;">
     <div class="container">
 
-      <!-- Brand -->
-      <a class="navbar-brand" href="index.php" target="_blank">
-        <strong>GREEN ENERGY POWER</strong>
+      <a class="navbar-brand" href="#">
+        <img src="img/Logo Design.png" height="80" alt="Green Energy Power Organization">
       </a>
 
       <!-- Collapse -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <i class="fas fa-bars" style="color: #555"></i>
       </button>
 
       <!-- Links -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
         <!-- Left -->
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav mr-auto" id="nav">
           <li class="nav-item">
             <a class="nav-link" href="index.php">Home</a>
           </li>

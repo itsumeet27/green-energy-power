@@ -1,25 +1,9 @@
 <?php include('includes/header.php'); ?>
 
-  <!-- Full Page Intro -->
-  <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/93.jpg'); background-repeat: no-repeat; background-size: cover;">
-
-    <!-- Mask & flexbox options-->
-    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-
-      <!-- Content -->
-      <div class="text-center white-text mx-5 wow fadeIn">
-        <h1 class="mb-4">
-          <strong>PRIVACY POLICY</strong>
-          <hr class="my-4" style="width: 100px;border-color: #fff;border-width: 2px;border-radius:20px;border-style: solid;">
-        </h1>
-      </div>
-      <!-- Content -->
-
-    </div>
-    <!-- Mask & flexbox options-->
-
+  <div style="margin-top: 7.5em">
+    <img src="img/Terms & Condition.jpg" class="img-responsive img-fluid">
   </div>
-  <!-- Full Page Intro -->
+  
   <section class="container py-5">
   	<p class="text-justify" style="font-weight: 400;color: #555;line-height: 1.7em;font-size: 17px;">
   		This privacy policy (“policy”) will help you understand how Green Energy Power Organisation  (“GEPO”, “us”, “we”, “our”) uses and protects the data you provide to us when you visit and use <a href="https://www.greenenergypower.org">www.greenenergypower.org</a> (“website”, “service”).
