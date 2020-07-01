@@ -196,12 +196,12 @@
 					        $headers .= 'Content-type: text/html; charset=iso-8859-1'."\r\n";
 					        $headers .= 'From:Green Energy Power <sksksharma0@gmail.com>'."\r\n";
 
-					        $ms.="
+					        $msg.="
 					        	<html>
 					        		<body>
 					        			<div class='container-fluid'>
 					        				<h3 class='h3-responsive text-justify'>Dear $firstname $lastname,</h3></br></br>";
-							$ms.="
+							$msg.="
 											<p style='padding-top:8px;color: green;font-size: 18px'>Your account information is successfully updated in our server. Please click the following link for verifying and activation your account.
 											</p>
 											<div style='padding-top:10px;'><a style='padding: 8px 15px;background-color:green;color:#fff;' href='http://netmatesolutions.com/green-energy-power/email_verification.php?code=$activationcode'>Click Here</a>
@@ -211,7 +211,7 @@
 										</div>
 									</body>
 								</html>";
-							mail($to,$subject,$ms,$headers);
+							mail($to,$subject,$msg,$headers);
 					    	echo "<script>alert('Registration successful, please verify in the registered Email-Id');</script>";
 							echo "<script>window.location = 'login.php';</script>";
 							$_SESSION['email'] = $email;

@@ -87,6 +87,9 @@
           <li class="nav-item">
             <a class="nav-link" href="index.php">Profile</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="complaints.php">Complaints</a>
+          </li>
         </ul>
 
         <!-- Right -->
