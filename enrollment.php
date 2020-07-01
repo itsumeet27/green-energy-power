@@ -76,6 +76,21 @@
 				    <label style="color:#555;font-weight:400" for="lastname">Last Name</label>
 				    <input type="text" id="lastname" name="lastname" class="form-control mb-4" is-valid is-invalid required>
 
+				    <!-- Government ID -->
+				    <label style="color:#555;font-weight:400" for="govt_id">Government ID</label>
+				    <div class="custom-control custom-radio">
+						<input type="radio" class="custom-control-input" id="aadhar_card" name="govt_id" value="Aadhar Card">
+						<label class="custom-control-label" style="font-size: 0.875rem;" for="aadhar_card">Aadhar Card</label>
+					</div>
+					<div class="custom-control custom-radio">
+						<input type="radio" class="custom-control-input" id="pan_card" name="govt_id" value="PAN Card">
+						<label class="custom-control-label" style="font-size: 0.875rem;" for="pan_card">PAN Card</label>
+					</div>
+
+					<!-- ID No. -->
+					<label style="color:#555;font-weight:400" for="id_no">ID No.</label>
+					<input type="text" id="id_no" name="id_no" class="form-control mb-4" is-valid is-invalid required>
+
 				    <!-- Select Service -->
 				    <label style="color:#555;font-weight:400" for="service">Select Service</label><br>
 				    <select class="browser-default custom-select mb-4" name="service" id="service" style="width: 300px" onchange="random_function()" is-valid is-invalid required>
@@ -147,6 +162,8 @@
   			$check = $_POST['terms_and_conditions'];
   			$firstname = sanitize($_POST['firstname']);
   			$lastname = sanitize($_POST['lastname']);
+  			$govt_id = sanitize($_POST['govt_id']);
+  			$id_no = sanitize($_POST['id_no']);
   			$service = sanitize($_POST['service']);
   			$plan = sanitize($_POST['plan']);
   			$avg_units_used = sanitize($_POST['avg_units_used']);
@@ -169,7 +186,7 @@
             		$fetch = $db->query($sql);
             		$email_check = mysqli_fetch_array($fetch);
             		if($email != $email_check['email']){
-            			$insert = "INSERT INTO users (firstname,lastname,service,plan,avg_units_used,electricity_number,conn_area_code,district,area_place,email,password,activationcode,status) VALUES ('$firstname','$lastname','$service','$plan','$avg_units_used','$electricity_number','$conn_area_code','$district','$area_place','$email','$password','$activationcode','$status')";
+            			$insert = "INSERT INTO users (firstname,lastname,govt_id,id_no,service,plan,avg_units_used,electricity_number,conn_area_code,district,area_place,email,password,activationcode,status) VALUES ('$firstname','$lastname','$govt_id','$id_no','$service','$plan','$avg_units_used','$electricity_number','$conn_area_code','$district','$area_place','$email','$password','$activationcode','$status')";
 						$result = $db->query($insert);
 						if($result){
 							$to=$email;

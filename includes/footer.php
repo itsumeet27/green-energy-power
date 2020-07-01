@@ -17,7 +17,7 @@
               <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                   <img class="img-fluid" src="img/Logo Design.png">
-                  <p class="lead" style="font-weight: 400;color: #444">Sustainability Starts with Non-Commerciality!TM</p>
+                  <p class="lead" style="font-weight: 400;color: #444">Sustainability Starts with Non-Commerciality!<sup>TM</sup></p>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                   <div class="contact pt-4">

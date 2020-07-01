@@ -14,6 +14,8 @@
 		    $id = $row_pro['id'];
 		    $firstname = $row_pro['firstname'];
 		    $lastname = $row_pro['lastname'];
+		    $govt_id = $row_pro['govt_id'];
+		    $id_no = $row_pro['id_no'];
 		    $email = $row_pro['email'];
 		    $service = $row_pro['service'];
 		    $plan = $row_pro['plan'];
@@ -22,8 +24,32 @@
 		    $conn_area_code = $row_pro['conn_area_code'];
 		    $district = $row_pro['district'];
 		    $area_place = $row_pro['area_place'];
+		    $request = $row_pro['request'];
 		}
 ?>
+	<style type="text/css">
+		.btn-floating{			
+    		cursor: pointer;
+    		border-radius: 50%;
+    		overflow: hidden;
+    		vertical-align: middle;
+    		box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+    		transition: all .2s ease-in-out;
+
+		}
+
+		.btn-floating{
+			width: 30px;
+    		height: 30px;
+    		border:none!important;
+		}
+
+		.options{
+			width: 30px;
+    		height: 30px;
+    		border:none!important;
+		}
+	</style>
 	<script type="text/javascript">
 	    function random_function(){
 	        var a=document.getElementById("service").value;
@@ -81,11 +107,13 @@
 
 	<!-- Profile Details -->
 	<div class="container-fluid profile-details my-4">
-		<h3 class="text-center pb-4">Profile Details</h3>
+		<h3 class="text-center pb-4" style="font-weight: 400">Profile Details</h3>
 		<div class="table-responsive">
 			<table class="table table-bordered table-striped table-sm">
 				<thead style="background: #004a6e;color: #fff">
+					<th></th>
 					<th>Full Name</th>
+					<th>Govt. ID</th>
 					<th>Email</th>
 					<th>Service</th>
 					<th>Plan</th>
@@ -97,7 +125,19 @@
 				</thead>
 				<tbody>
 					<tr>
+						<td>
+							<form name="request_now" method="post" action="">
+								<?php 
+									if($request == 1) { ?>
+										<button class="btn-floating options btn-success" disabled><i class="fas fa-check-circle" title="Requested"></i></button>
+									<?php }else{
+								?>
+									<button class="btn-floating options btn-primary" type="submit" name="request_now" title="Request Now"><i class="fas fa-hand-point-up"></i></button>
+								<?php } ?>
+							</form>
+						</td>
 						<td style="font-weight: 400"><?=$firstname; ?> <?=$lastname; ?></td>
+						<td style="font-weight: 400"><?=$govt_id; ?> - <?=$id_no; ?></td>
 						<td style="font-weight: 400"><?=$email; ?></td>
 						<td style="font-weight: 400"><?=$service; ?></td>
 						<td style="font-weight: 400"><?=$plan; ?> Discount</td>
@@ -252,13 +292,24 @@
           </div>
         </div>
 		<div class="mt-2 ml-0">
-	      <a href="" class="btn btn-success btn-rounded mb-4" data-toggle="modal" data-target="#editAccount">Edit Details</a>
-	      <a href="" class="btn btn-primary btn-rounded mb-4" data-toggle="modal" data-target="#changePassword">Change Password</a>
-	      <a href="" class="btn btn-danger btn-rounded mb-4" data-toggle="modal" data-target="#deleteAccount">Delete Account</a>
+			<a href="" class="btn btn-elegant btn-rounded mb-4" data-toggle="modal" data-target="#editAccount">Edit Details</a>
+			<a href="" class="btn btn-primary btn-rounded mb-4" data-toggle="modal" data-target="#changePassword">Change Password</a>
+			<a href="" class="btn btn-danger btn-rounded mb-4" data-toggle="modal" data-target="#deleteAccount">Delete Account</a>
 	    </div>
 	</div>
 
 	<?php
+
+		//Request Now
+		if(isset($_POST['request_now'])){
+			$request = "UPDATE users SET request = 1 WHERE id = '$id'";
+			$runRequest = $db->query($request);
+			if($runRequest){
+				echo "<script>alert('Your request has been taken! Our associate will visit your place soon for installation.')</script>";
+				echo "<script>window.open('index.php', '_self')</script>";
+			}
+		}
+
 		// Update User
 		if(isset($_POST['update'])){
 			$user_id = $id;

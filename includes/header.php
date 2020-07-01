@@ -129,18 +129,18 @@
           <?php 
               if(!isset($_SESSION['email'])){
                 echo '<li class="nav-item">
-                        <a href="login.php" class="btn btn-md btn-white" target="_blank">LOGIN</a>
+                        <a href="login.php" class="btn btn-elegant" target="_blank">LOGIN</a>
                       </li>
                       <li class="nav-item">
-                        <a href="enrollment.php" class="btn btn-md btn-default" target="_blank">ENROLL NOW</a>
+                        <a href="enrollment.php" class="btn btn-default" target="_blank">ENROLL NOW</a>
                       </li>';
               }
               else{
                 echo '<li class="nav-item">
-                        <a href="profile/index.php" class="btn btn-md btn-white" target="_blank">My Profile</a>
+                        <a href="profile/index.php" class="btn btn-elegant" target="_blank">My Profile</a>
                       </li>
                       <li class="nav-item">
-                        <a href="profile/logout.php" class="btn btn-md btn-default" target="_blank">Logout</a>
+                        <a href="profile/logout.php" class="btn btn-default" target="_blank">Logout</a>
                       </li>';
               }
             ?>
