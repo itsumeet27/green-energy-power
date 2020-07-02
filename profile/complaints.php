@@ -27,6 +27,14 @@
 		    $area_place = $row_pro['area_place'];
 		    $request = $row_pro['request'];
 		}
+
+		$sqlComplaints = "SELECT u.firstname, u.lastname, u.email, c.complaint_id, c.subject, c.description, c.response, c.status FROM complaints c INNER JOIN users u ON u.id = c.user_id";
+		$resultComplaint = $db->query($sqlComplaints);
+		if(mysqli_num_rows($resultComplaint) > 0){
+			while ($row_pro = mysqli_fetch_array($resultComplaint)) {
+			    $complaint_id = $row_pro['complaint_id'];
+			}
+		}
 ?>
 	<style type="text/css">
 		.btn-floating{			
@@ -50,6 +58,12 @@
     		height: 45px;
     		border:none!important;
 		}
+
+		.response{
+			width: 30px;
+    		height: 30px;
+    		border:none!important;
+		}
 	</style>
 
 	<!-- Profile Details -->
@@ -71,6 +85,7 @@
 		<div class="table-responsive">
 			<table class="table table-bordered table-striped table-sm">
 				<thead style="background: #004a6e;color: #fff">
+					<th></th>
 					<th>Complaint ID</th>
 					<th>Subject</th>
 					<th>Description</th>
@@ -85,11 +100,28 @@
 							while ($complain = mysqli_fetch_array($run)):
 					?>
 					<tr>
+						<td>
+							<form name="send_response" method="post" action="">
+								<?php 
+									if($complain['status'] == 'Done') { ?>
+										<button class="btn-floating response btn-success" disabled><i class="fas fa-check-circle" title="Complaint Resolved"></i></button>
+									<?php }else{
+								?>
+									<button class="btn-floating response btn-primary" type="submit" name="send_response" title="Send Response"><i class="fas fa-hourglass-half"></i></button>
+								<?php } ?>
+							</form>
+						</td>
 						<td style="font-weight: 400"><?=$complain['complaint_id']; ?></td>
 						<td style="font-weight: 400"><?=$complain['subject']; ?></td>
 						<td style="font-weight: 400"><?=$complain['description']; ?></td>
-						<td style="font-weight: 400"><?=$complain['response']; ?></td>
-						<td style="font-weight: 400"><?=$complain['status']; ?></td>
+						<td style="font-weight: 400;color: green"><?=$complain['response']; ?></td>
+						<?php if($complain['status'] == 'In Progress'){ ?>
+						<td style="font-weight: 400;color: green"><?=$complain['status']; ?></td>
+						<?php }elseif($complain['status'] == 'Done'){ ?>
+						<td style="font-weight: 400;color: blue"><?=$complain['status']; ?></td>
+						<?php }else{ ?>
+						<td style="font-weight: 400;"><?=$complain['status']; ?></td>
+						<?php } ?>
 					</tr>
 					<?php endwhile; } ?>
 				</tbody>
@@ -130,6 +162,17 @@
 	</div>
 
 	<?php
+
+		if(isset($_POST['send_response'])){
+			$request = "UPDATE complaints SET status = 'Done' WHERE complaint_id = '$complaint_id'";
+			$runRequest = $db->query($request);
+			if($runRequest){
+				echo "<script>alert('Thank you for your response!')</script>";
+				echo "<script>window.open('complaints.php', '_self')</script>";
+			}
+		}
+
+		// Insert Data in Complaints
 		if(isset($_POST['submit'])){
 			$user_id = $id;
 			$subject = $_POST['subject'];
