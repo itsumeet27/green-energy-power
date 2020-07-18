@@ -132,7 +132,7 @@
                         <a href="login.php" class="btn btn-elegant" target="_blank">LOGIN</a>
                       </li>
                       <li class="nav-item">
-                        <a href="enrollment.php" class="btn btn-default" target="_blank">ENROLL NOW</a>
+                        <a href="enrollment.php" class="btn" target="_blank" style="background: #004a6e; color: #fff">ENROLL NOW</a>
                       </li>';
               }
               else{
