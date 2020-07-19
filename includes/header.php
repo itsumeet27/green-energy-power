@@ -91,7 +91,7 @@
     <div class="container">
 
       <a class="navbar-brand" href="#">
-        <img src="img/Logo Design.png" height="80" alt="Green Energy Power Organization">
+        <img src="img/Logo Design.png" height="100" alt="Green Energy Power Organization">
       </a>
 
       <!-- Collapse -->
@@ -112,7 +112,7 @@
             <a class="nav-link dropdown-toggle" id="about" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
             <div class="dropdown-menu dropdown-primary" aria-labelledby="about">
               <a class="dropdown-item" href="about-us.php">About Us</a>
-              <a class="dropdown-item" href="how-it-works.php">How it Works?</a>
+              <a class="dropdown-item" href="how-it-works.php">How it Works</a>
               <a class="dropdown-item" href="why-us.php">Why Us?</a>
             </div>
           </li>
@@ -120,7 +120,7 @@
             <a class="nav-link" href="services.php">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.php">Contact</a>
+            <a class="nav-link" href="./#contact-us">Contact</a>
           </li>
         </ul>
 

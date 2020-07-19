@@ -60,7 +60,7 @@
   	<section class="container-fluid py-5 mb-5">
 	  	<div class="row">
 	  		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="width: 100%;">
-	  			<h3 class="h3-responsive mb-4 font-weight-bold" style="color: #555">Go through our Terms and Conditons!</h3>
+	  			<h3 class="h3-responsive mb-4 font-weight-bold" style="color: #555">Go through our Terms and Conditions!</h3>
 	  			<iframe src="docs/Terms and Conditions.pdf" style="width: 100%; height: 100%"></iframe>
 	  		</div>
 	  		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">

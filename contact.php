@@ -5,7 +5,6 @@
   </div>
 
   <section class="container">
-  	<!--Section: Contact v.2-->
 	<section class="mb-4 mt-5">
 
 	    <h2 class="h2-responsive text-center pb-4 font-weight-bold" style="color: #555">CONTACT US</h2>

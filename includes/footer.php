@@ -17,10 +17,10 @@
               <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                   <img class="img-fluid" src="img/Logo Design.png">
-                  <p class="lead" style="font-weight: 400;color: #444">Sustainability Starts with Non-Commerciality!<sup>TM</sup></p>
+                  <!-- <p class="lead" style="font-weight: 400;color: #444">Sustainability Starts with Non-Commerciality!<sup>TM</sup></p> -->
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                  <div class="contact pt-4">
+                  <div class="contact">
                     <h5 class="h5-responsive text-justify" style="font-weight: 500;color: #444">Email</h5>
                     <a class="float-left mt-1" href="mailto:sksksharma0@gmail.com" style="font-size: 18px;color: #555;font-weight: 400">sksksharma0@gmail.com</a>
                     <h5 class="h5-responsive pt-5 text-justify" style="font-weight: 500;color: #444">Mobile</h5>
@@ -70,7 +70,7 @@
 
       <!--Copyright-->
       <div class="page-footer footer-copyright py-3 white-text" style="font-weight: 400">
-        © Green Energy Power 2020
+        © Green Energy Power Organization 2020
       </div>
       <!--/.Copyright-->
 

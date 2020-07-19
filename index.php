@@ -50,20 +50,18 @@
   <div class="">
     <div class="text-center py-5 px-3">
       <h2 class="mb-4 h2-responsive">
-        <strong>Sustainability Starts with Non-Commerciality!<sup>TM</sup></strong>
+        <strong>Sustainability Starts with Non-Commerciality!</strong><sup>TM</sup>
       </h2>
 
       <p class="lead p-responsive">
         <strong>Paving the Way for Climate Change Action & Zero-Emission Lifestyle by Switching to Green Energy</strong>
       </p>
 
-      <a target="_blank" href="enrollment.php" class="btn btn-outline-black btn-lg">Enroll Now
-        <i class="fas fa-edit ml-2"></i>
-      </a>
+      <a href="enrollment.php" class="btn" target="_blank" style="background: #004a6e; color: #fff">ENROLL NOW</a>
     </div>
 
     <!--Section: Our Mission-->
-      <section style="padding: 8em 0em" class="container">
+      <section style="padding: 2em 0em" class="container">
 
         <!--Grid row-->
         <div class="row wow fadeIn">
@@ -100,7 +98,7 @@
     <!--Section: Our Mission-->
 
     <!--Section: Our Scheme-->
-      <section style="padding: 6em 0em;background-color: #00869b45" class="container-fluid mx-0">
+      <section style="padding: 2em 0em;background-color: #00869b45" class="container-fluid mx-0">
 
         <h1 class="h1-responsive text-center my-4 font-weight-bold" style="color: #555">OUR SCHEME</h1>
         <hr class="my-4" style="width: 100px;border-color: #555;border-width: 2px;border-radius:20px;border-style: solid;">
@@ -168,7 +166,7 @@
     <!--Section: Our Scheme-->
 
     <!--Section: Driving Sustainavility-->
-      <section class="container"style="padding: 6em 1.25em;">
+      <section class="container"style="padding: 2em 1.25em;">
         <h1 class="h1-responsive text-center my-4 font-weight-bold" style="color: #555">DRIVING SUSTAINABILITY</h1>
         <hr class="my-4" style="width: 150px;border-color: #555;border-width: 2px;border-radius:20px;border-style: solid;">
         <p class="text-justify pt-2" style="font-weight: 400;color: #555;line-height: 1.7em;font-size: 17px;">
@@ -207,6 +205,98 @@
       </section>
     <!--Section: Driving Sustainavility-->
 
+    <!-- Section: Contact form -->
+      <section style="padding: 6em 0em;" class="container" id="contact-us">
+
+        <h1 class="h1-responsive text-center my-4 font-weight-bold" style="color: #555">CONTACT US</h1>
+        <hr class="my-4" style="width: 100px;border-color: #555;border-width: 2px;border-radius:20px;border-style: solid;">
+        <p class="text-center w-responsive mx-auto mb-5" style="font-size: 18px">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.</p>
+
+        <section class="mb-4 mt-5">
+          <div class="row">
+              <div class="col-md-9 mb-md-0 mb-5">
+                  <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                      <div class="row">
+                          <div class="col-md-6">
+                              <div class="md-form mb-0">
+                                  <input type="text" id="name" name="name" class="form-control">
+                                  <label for="name" class="">Your name</label>
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="md-form mb-0">
+                                  <input type="text" id="email" name="email" class="form-control">
+                                  <label for="email" class="">Your email</label>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-12">
+                              <div class="md-form mb-0">
+                                  <input type="text" id="subject" name="subject" class="form-control">
+                                  <label for="subject" class="">Subject</label>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-12">
+
+                              <div class="md-form">
+                                  <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                  <label for="message">Your message</label>
+                              </div>
+                          </div>
+                      </div>
+                  </form>
+                  <div class="text-center text-md-left">
+                      <a class="btn" onclick="validateForm();" style="background: #004a6e; color: #fff">Send</a>
+                  </div>
+                  <div class="status"></div>
+              </div>
+              <div class="col-md-3 text-center">
+                  <ul class="list-unstyled mb-0">
+                      <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                          <p class="pt-3">San Francisco, CA 94126, USA</p>
+                      </li>
+
+                      <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                          <p class="pt-3">+ 91 99999 99999</p>
+                      </li>
+
+                      <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                          <p class="pt-3">contact@gmail.com</p>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+        </section>
+      </section>
+    <!-- Section: Contact form -->
+
   </div>
+  <script type="text/javascript">
+    function validateForm() {
+      document.getElementById('status').innerHTML = "Sending...";
+      formData = {
+        'name'     : $('input[name=name]').val(),
+        'email'    : $('input[name=email]').val(),
+        'subject'  : $('input[name=subject]').val(),
+        'message'  : $('textarea[name=message]').val()
+      };
+      $.ajax({
+        url : "mail.php",
+        type: "POST",
+        data : formData,
+        success: function(data, textStatus, jqXHR){
+          $('#status').text(data.message);
+          if (data.code) //If mail was sent successfully, reset the form.
+          $('#contact-form').closest('form').find("input[type=text], textarea").val("");
+        },
+        error: function (jqXHR, textStatus, errorThrown){
+          $('#status').text(jqXHR);
+        }
+      });
+    }
+  </script>
   
 <?php include('includes/footer.php'); ?>
