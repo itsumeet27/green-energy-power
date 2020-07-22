@@ -186,18 +186,18 @@
           </ul>
         </p>
         <p class="text-justify" style="font-weight: 400;color: #555;line-height: 1.7em;font-size: 17px;">
-          So if you are willing to run your electrical appliances without worry of heavy bills, contribute to climate change and add your share in the upliftment of rural farmers, enroll now (make it clickable link that will take to enrollment page) with one of our discount schemes.
+          So if you are willing to run your electrical appliances without worry of heavy bills, contribute to climate change and add your share in the upliftment of rural farmers, <a href="enrollment.php">enroll now</a>  with one of our discount schemes.
           <ol type="1">
-            <li class="text-justify" style="line-height: 1.7em;font-size: 17px;font-weight: 400;color: #555">
+            <li class="text-justify" style="line-height: 1.7em;font-size: 14px;font-weight: 400;color: #555">
               The free electricity is subjected to the load produced by solar panels and windmill. After 10 years, the ownership of the equipment will be transferred to you or can opt to continue operation and maintenance with us for a 90% discount of electricity bill or any fixed annual fee calculated accordingly at that time. In the case of the battery, if the maintenance is opted with us after 10 years, will change to new batteries and new technologically advanced battery to keep up maximum power for back up.
             </li>
-            <li class="text-justify" style="line-height: 1.7em;font-size: 17px;font-weight: 400;color: #555">
+            <li class="text-justify" style="line-height: 1.7em;font-size: 14px;font-weight: 400;color: #555">
               The discount is applicable to the electricity consumed from the green energy equipment installed or as per your local DISCOM operator net metering policies. After 15 years, the ownership of the equipment will be transferred to you or can opt to continue operation and maintenance with us for 50% discounted electricity or a fixed annual fee calculated accordingly at that time.
             </li>
-            <li class="text-justify" style="line-height: 1.7em;font-size: 17px;font-weight: 400;color: #555">
+            <li class="text-justify" style="line-height: 1.7em;font-size: 14px;font-weight: 400;color: #555">
               The discount is applicable to the electricity consumed from the green energy equipment installed or as per your local DISCOM operator net metering policies. There is no ownership transfer as the discount is until the life of the green energy equipment installed.
             </li>
-            <li class="text-justify" style="line-height: 1.7em;font-size: 17px;font-weight: 400;color: #555">
+            <li class="text-justify" style="line-height: 1.7em;font-size: 14px;font-weight: 400;color: #555">
               Shades will be made in case of terrace or car parking for which the cost will be adjusted in the discount period accordingly.
             </li>
           </ol>

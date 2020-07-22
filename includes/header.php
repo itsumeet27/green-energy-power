@@ -90,7 +90,7 @@
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar z-depth-0" style="background-color: #fff;">
     <div class="container">
 
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="./">
         <img src="img/Logo Design.png" height="100" alt="Green Energy Power Organization">
       </a>
 

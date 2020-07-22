@@ -22,14 +22,14 @@
               25% discount on your electricity bills for 15 years then free electricity until lifetime of the panel – <a href="enrollment.php">Click here to enroll</a>
             </li>
             <li class="text-justify" style="font-size: 17px;line-height: 1.7em;color: #555;font-weight: 400">
-              50% discount on your electricity bills until the lifetime of the panels – <a href="enrollment.php">Click here to enrolll</a>
+              50% discount on your electricity bills until the lifetime of the panels – <a href="enrollment.php">Click here to enroll</a>
             </li>
           </ul>
           <!-- Industry or sheds, cold storage, commercial building, institution buildings -->
           <h4 class="h4-responsive text-left font-weight-bold" style="color: #555;line-height: 1.7em">Industry or sheds, cold storage, commercial building, institution buildings</h4>
           <ul class="text-justify">
             <li class="text-justify" style="font-size: 17px;line-height: 1.7em;color: #555;font-weight: 400">
-              0% discount on your electricity bills for 10 years then free electricity until lifetime of the panel with battery back-up – <a href="enrollment.php">Click here to enrolll</a>
+              0% discount on your electricity bills for 10 years then free electricity until lifetime of the panel with battery back-up – <a href="enrollment.php">Click here to enroll</a>
             </li>
             <li class="text-justify" style="font-size: 17px;line-height: 1.7em;color: #555;font-weight: 400">
               25% discount on your electricity bills for 15 years then free electricity until lifetime of the panel – <a href="enrollment.php">Click here to enroll</a>
