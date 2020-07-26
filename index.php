@@ -98,7 +98,7 @@
     <!--Section: Our Mission-->
 
     <!--Section: Our Scheme-->
-      <section style="padding: 2em 0em;background-color: #00869b45" class="container-fluid mx-0">
+      <section style="padding: 2em 0em;background-color: #dfdfdf45" class="container-fluid mx-0">
 
         <h1 class="h1-responsive text-center my-4 font-weight-bold" style="color: #555">OUR SCHEME</h1>
         <hr class="my-4" style="width: 100px;border-color: #555;border-width: 2px;border-radius:20px;border-style: solid;">

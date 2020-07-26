@@ -26,7 +26,7 @@
             </li>
           </ul>
           <!-- Industry or sheds, cold storage, commercial building, institution buildings -->
-          <h4 class="h4-responsive text-left font-weight-bold" style="color: #555;line-height: 1.7em">Industry or sheds, cold storage, commercial building, institution buildings</h4>
+          <h4 class="h4-responsive text-left font-weight-bold" style="color: #555;line-height: 1.7em">Industry or Sheds, Cold Storage, Commercial Building, Institution Buildings</h4>
           <ul class="text-justify">
             <li class="text-justify" style="font-size: 17px;line-height: 1.7em;color: #555;font-weight: 400">
               0% discount on your electricity bills for 10 years then free electricity until lifetime of the panel with battery back-up – <a href="enrollment.php">Click here to enroll</a>
@@ -49,7 +49,7 @@
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3">
           <!-- High raised buildings -->
-          <h4 class="h4-responsive text-justify font-weight-bold" style="color: #555">High raised buildings</h4>
+          <h4 class="h4-responsive text-justify font-weight-bold" style="color: #555">High-Rise Buildings</h4>
           <ul class="text-justify">
             <li class="text-justify" style="font-size: 17px;line-height: 1.7em;color: #555;font-weight: 400">
               25% Discount on your electricity bills plan – <a href="enrollment.php">Click here to enroll</a>
@@ -69,7 +69,7 @@
             </li>
           </ul>
           <!-- Coastal areas -->
-          <h4 class="h4-responsive text-justify font-weight-bold" style="color: #555">Coastal areas</h4>
+          <h4 class="h4-responsive text-justify font-weight-bold" style="color: #555">Coastal Areas</h4>
           <ul class="text-justify">
             <li class="text-justify" style="font-size: 17px;line-height: 1.7em;color: #555;font-weight: 400">
               25% Discount on your electricity bills plan – <a href="enrollment.php">Click here to enroll</a>
