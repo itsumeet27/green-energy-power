@@ -66,7 +66,7 @@
     <div class="container">
 
       <!-- Brand -->
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="/">
         <img src="../img/Logo Design.png" height="80" alt="Green Energy Power Organization">
       </a>
 
