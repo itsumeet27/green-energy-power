@@ -55,4 +55,39 @@
 		</div>
 	</div>
 
+	<?php
+
+		$sql = "SELECT * FROM users";
+		$result = $db->query($sql);
+		if(mysqli_num_rows($result) > 0){
+			while($row = mysqli_fetch_assoc($result)){
+				$user_email = $row['email'];
+			}
+		}
+
+		if(isset($_POST['submit'])){
+			$email = sanitize($_POST['email']);
+			$password = sanitize(md5($_POST['password']));
+			$confirm_password = sanitize(md5($_POST['confirm_password'])); 
+
+			if($email == $user_email){
+				if($confirm_password != $password){
+					echo "<script>alert('Your password does not match')</script>";
+					echo "<script>window.open('forgot-password.php','_self')</script>";
+	            }else{
+	            	$updateSql = "UPDATE users SET password = '$password' WHERE email = '$email'";
+	            	$runUpdate = $db->query($updateSql);
+	            	if($runUpdate){
+	            		echo "<script>alert('Your password has been changed, please login!')</script>";
+						echo "<script>window.open('login.php','_self')</script>";
+	            	}
+
+	            }
+			}else{
+				echo "<script>alert('You are not registered, please enroll!')</script>";
+	            echo "<script>window.open('forgot-password.php','_self')</script>";
+			}
+		}
+	?>
+
 <?php include('includes/footer.php'); ?>
