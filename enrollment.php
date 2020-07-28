@@ -7,6 +7,19 @@
 		input[type="text"], input[type="number"], input[type="email"], input[type="password"]{
 			width: 300px;
 		}
+
+		#terms-and-conditions-mobile{
+			display: none;
+		}
+
+		@media only screen and (max-width: 991px) {
+			#terms-and-conditions {
+				display: none;
+			}
+			#terms-and-conditions-mobile{
+				display: block;
+			}
+		}
 	</style>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
   	<script type="text/javascript">
@@ -59,9 +72,18 @@
 
   	<section class="container-fluid py-5 mb-5">
 	  	<div class="row">
-	  		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="width: 100%;">
+	  		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="width: 100%;" id="terms-and-conditions">
 	  			<h3 class="h3-responsive mb-4 font-weight-bold" style="color: #555">Go through our Terms and Conditions!</h3>
 	  			<iframe src="docs/Terms and Conditions.pdf" style="width: 100%; height: 100%"></iframe>
+	  			<!-- <object data="docs/Terms and Conditions.pdf" type="application/pdf" width="100%" height="100%">
+				  <p>Your web browser doesn't have a PDF plugin.
+				  Instead you can <a href="docs/Terms and Conditions.pdf">click here to
+				  download the PDF file.</a></p>
+				</object> -->
+	  		</div>
+	  		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="width: 100%;" id="terms-and-conditions-mobile">
+	  			<h3 class="h3-responsive mb-4 font-weight-bold" style="color: #555">Go through our Terms and Conditions!</h3>
+	  			<p class="lead"><a href="docs/Terms and Conditions.pdf">Click here</a> to read our terms and conditions</p>
 	  		</div>
 	  		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 	  			<h3 class="h3-responsive mb-4 font-weight-bold" style="color: #555">Fill out the enrollment form!</h3>
