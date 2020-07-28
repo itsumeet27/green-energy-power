@@ -50,7 +50,7 @@
   <div class="">
     <div class="text-center py-5 px-3">
       <h2 class="mb-4 h2-responsive">
-        <strong>Sustainability Starts with Non-Commerciality!</strong><sup>TM</sup>
+        <strong>Sustainability Starts with Non-Commerciality!</strong><sup style="font-size: 50%;top: -1.35em">TM</sup>
       </h2>
 
       <p class="lead p-responsive">
