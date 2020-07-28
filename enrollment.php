@@ -171,7 +171,7 @@
 				    </div>
 
 				    <!-- Send button -->
-				    <button class="btn btn-info btn-block" type="submit" name="submit" style="width: 300px">Submit</button>
+				    <button class="btn btn-block" type="submit" name="submit" style="width: 300px;background: #004a6e; color: #fff">Submit</button>
 
 				</form>
 				<!-- Default form contact -->

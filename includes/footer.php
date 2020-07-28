@@ -22,9 +22,9 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                   <div class="contact">
                     <h5 class="h5-responsive text-justify" style="font-weight: 500;color: #444">Email</h5>
-                    <a class="float-left mt-1" href="mailto:sksksharma0@gmail.com" style="font-size: 18px;color: #555;font-weight: 400">sksksharma0@gmail.com</a>
+                    <a class="float-left mt-1" href="mailto:sksksharma0@gmail.com" style="font-size: 16px;color: #555;font-weight: 400">sksksharma0@gmail.com</a>
                     <h5 class="h5-responsive pt-5 text-justify" style="font-weight: 500;color: #444">Mobile</h5>
-                    <a class="float-left mt-1" href="tel:+918286864601" style="font-size: 18px;color: #555;font-weight: 400">8286864601</a>
+                    <a class="float-left mt-1" href="tel:+918286864601" style="font-size: 16px;color: #555;font-weight: 400">8286864601</a>
                   </div>                  
                 </div>
               </div>
