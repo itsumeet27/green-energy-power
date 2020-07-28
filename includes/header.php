@@ -78,7 +78,10 @@
 
     #nav li a{
       color: #555;
-      font-weight: 500
+      font-weight: 500;
+      font-size: 17px;
+      margin-left: 10px;
+      padding: 8px 12px;
     }
 
   </style>
